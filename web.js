@@ -7,4 +7,5 @@ const requestListener = function (req, res) {
 }
 
 const server = http.createServer(requestListener);
+server.title = "huetimes3";
 server.listen(PORT);
