@@ -1,6 +1,8 @@
 const fs = require('fs');
 const http = require('http');
 const PORT = process.env.PORT || 5000;
+const publicDir = require('path').join(__dirname,'/public');
+
 
 const requestListener = function (req, res) {
   fs.readFile('index.html', function(err,data) {
@@ -11,4 +13,5 @@ const requestListener = function (req, res) {
 }
 
 const server = http.createServer(requestListener);
+server.use(express.static(publicDir));
 server.listen(PORT);
