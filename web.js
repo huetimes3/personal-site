@@ -13,5 +13,6 @@ const requestListener = function (req, res) {
 }
 
 const server = http.createServer(requestListener);
-server.use(express.static(publicDir));
+
 server.listen(PORT);
+server.use(express.static(publicDir));
