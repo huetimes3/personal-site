@@ -1,11 +1,14 @@
+const fs = require('fs');
 const http = require('http');
 const PORT = process.env.PORT || 5000;
 
 const requestListener = function (req, res) {
-  res.writeHead(200);
-  res.end("it's ya boy hue <3 \n awa awa");
+  fs.readFile('index.html', function(err,data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
 }
 
 const server = http.createServer(requestListener);
-server.title = "huetimes3";
 server.listen(PORT);
