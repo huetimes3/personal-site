@@ -3,7 +3,7 @@
     --secondary-color: #9b4c0c;
     --primary-font-color: #4d4d4d;
     --secondary-font-color: #3e3e3e;
-    --bg-color: #f5f5f5;
+    --bg-color: #dddddd;
     --heading-color: #1a1a1b;
 }
 
@@ -13,7 +13,7 @@
     --primary-font-color: #4d4d4d;
     --secondary-font-color: #6c6c6c;
     --bg-color: #1a1a1b;
-    --heading-color: #f5f5f5;
+    --heading-color: #dddddd;
 }
 
 * {
@@ -111,6 +111,10 @@ ul li a:hover {
 
 #blurb {
     text-align: justify;
+}
+
+#links {
+    color: var(--primary-font-color)
 }
 
 #footer {
