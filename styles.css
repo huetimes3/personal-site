@@ -89,6 +89,10 @@ ul {
     color: var(--primary-font-color);
 }
 
+ul li {
+    margin: 0.5rem 0;
+}
+
 ul li a {
     color: var(--primary-font-color);
 }
@@ -153,6 +157,19 @@ ul li a:hover {
         width: 90%;
         height: auto;
         gap: 2rem;
+    }
+
+    #left, #right {
+        align-items: center;
+    }
+
+    h3, ul {
+        text-align: center;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
     }
 
     .col {
