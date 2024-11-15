@@ -27,7 +27,6 @@ html, body {
     height: 100%;
     background-color: var(--bg-color);
     font-family: "Chakra Petch", sans-serif;
-
 }
 
 body {
@@ -35,7 +34,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 a {
@@ -152,6 +150,12 @@ ul li a:hover {
 
 /* mobile support :p */
 @media (max-width: 768px) {
+    body {
+        justify-content: start;
+        padding: 3rem 0;
+        height: fit-content
+    }
+
     #container {
         flex-direction: column-reverse;
         width: 90%;
