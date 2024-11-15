@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #9f644d;
-    --secondary-color: #9b4c0c;
+    --primary-color: #aa4922;
+    --secondary-color: #cdae94;
     --primary-font-color: #4d4d4d;
     --secondary-font-color: #3e3e3e;
     --bg-color: #dddddd;
@@ -27,6 +27,7 @@ html, body {
     height: 100%;
     background-color: var(--bg-color);
     font-family: "Chakra Petch", sans-serif;
+
 }
 
 body {
@@ -34,6 +35,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 a {
@@ -61,6 +63,7 @@ p, span {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .col {
@@ -71,7 +74,7 @@ p, span {
 }
 
 #left {
-    align-items: center;
+    align-items: start;
 }
 
 #left h3 {
@@ -96,7 +99,8 @@ ul li a:hover {
 }
 
 #right {
-    align-items: center;
+    align-items: end;
+
 }
 
 #right a {
@@ -114,7 +118,8 @@ ul li a:hover {
 }
 
 #links {
-    color: var(--primary-font-color)
+    color: var(--primary-font-color);
+    
 }
 
 #footer {
@@ -138,10 +143,10 @@ ul li a:hover {
 }
 
 #footer button img {
-    width: 2rem;
+    height: 2rem;
 }
 
-/* mobile support */
+/* mobile support :p */
 @media (max-width: 768px) {
     #container {
         flex-direction: column-reverse;
