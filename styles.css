@@ -54,59 +54,33 @@ p, span {
     color: var(--primary-font-color);
 }
 
+#content {
+    width: 650px;
+}
+
 #container {
     border: 3px solid var(--secondary-color);
-    width: 750px;
+    width: 100%;
     height: 415px;
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .col {
     flex: 1;
-    max-width: 45%;
     display: flex;
     flex-direction: column;
 }
 
 #left {
     align-items: start;
+    flex: 1.2;
 }
 
-#left h3 {
+#left h1 {
     width: 100%;
-    margin-top: 1rem;
-}
-
-ul {
-    margin: 0;
-    width: 100%;
-    list-style-type: ">> ";
-    color: var(--primary-font-color);
-}
-
-ul li {
-    margin: 0.5rem 0;
-}
-
-ul li a {
-    color: var(--primary-font-color);
-}
-
-ul li a:hover {
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-#right {
-    align-items: end;
-
-}
-
-#right a {
-    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 #self-portrait {
@@ -119,16 +93,71 @@ ul li a:hover {
     text-align: justify;
 }
 
+#username-rainbow {
+    color: var(--heading-color);
+    transition: 1s ease;
+}
+
+#username-rainbow:hover {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 2s linear infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow {
+    0%{
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
 #links {
     color: var(--primary-font-color);
     
+}
+
+#right {
+    align-items: end;
+    padding-right: 1.5rem;
+}
+
+#right a {
+    color: var(--primary-color);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: "<<  ";
+    direction: rtl;
+    color: var(--primary-font-color);
+}
+
+ul li {
+    margin: 0.5rem 0;
+
+}
+
+ul li a {
+    color: var(--primary-font-color);
+}
+
+ul li a:hover {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 #footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 750px;
+    width: 100%;
 }
 
 #footer span {

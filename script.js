@@ -21,3 +21,9 @@ function toggleDarkMode() {
 	document.getElementById('dark-mode-toggle').innerHTML = switchToTheme === 'dark' ? '<img src="assets/sun_icon.svg" alt="light mode">' : '<img src="assets/moon_icon.svg" alt="dark mode">';
 	document.documentElement.setAttribute('data-theme', switchToTheme);
 }
+
+function playClownHorn() {
+	var clownHorn = new Audio('assets/clown_horn.mp3');
+	clownHorn.playbackRate = Math.random() + 0.75;
+	clownHorn.play();
+}
