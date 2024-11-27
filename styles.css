@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     color: var(--heading-color);
+    margin-bottom: 0.5rem;
 }
 
 p, span {
@@ -76,11 +77,6 @@ p, span {
 #left {
     align-items: start;
     flex: 1.2;
-}
-
-#left h1 {
-    width: 100%;
-    margin-bottom: 0.5rem;
 }
 
 #self-portrait {
@@ -185,15 +181,23 @@ ul li a:hover {
         height: fit-content
     }
 
-    #container {
-        flex-direction: column-reverse;
+    #content {
         width: 90%;
+    }
+
+    #container {
+        flex-direction: column;
+        width: 100%;
         height: auto;
         gap: 2rem;
     }
 
     #left, #right {
         align-items: center;
+    }
+
+    h1 {
+
     }
 
     h3, ul {
@@ -214,6 +218,6 @@ ul li a:hover {
     }
 
     #footer {
-        width: 90%;
+        width: 100%;
     }
 }
