@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(function() {
 		document.getElementById('body').style.transition = 'all 1s ease';
 	}, 500);
+
+	const username = document.getElementById('username-rainbow');
+	username.addEventListener('click', () => {
+		username.classList.add('clicked');
+
+		setTimeout(() => {
+			username.classList.remove('clicked');
+		}, 3000);
+	})
 });
 
 function toggleDarkMode() {

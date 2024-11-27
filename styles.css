@@ -92,9 +92,10 @@ p, span {
 #username-rainbow {
     color: var(--heading-color);
     transition: 1s ease;
+    cursor: pointer;
 }
 
-#username-rainbow:hover {
+#username-rainbow:hover, #username-rainbow.clicked {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow);
     -webkit-background-clip: text;
     background-clip: text;
@@ -196,8 +197,9 @@ ul li a:hover {
         align-items: center;
     }
 
-    h1 {
+    #username-rainbow:click {
 
+        
     }
 
     h3, ul {
