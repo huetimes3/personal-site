@@ -6,22 +6,25 @@ document.addEventListener('DOMContentLoaded', function() {
 	  	document.documentElement.setAttribute('data-theme', 'light');
 	}
 	var darkModeToggle = document.getElementById('dark-mode-toggle');
+	if (darkModeToggle) {
+		darkModeToggle.innerHTML = isDarkDefault ? '<img src="assets/sun_icon.svg" alt="light mode">' : '<img src="assets/moon_icon.svg" alt="dark mode">';
+		darkModeToggle.addEventListener('click', toggleDarkMode);
+	}
 
-	darkModeToggle.innerHTML = isDarkDefault ? '<img src="assets/sun_icon.svg" alt="light mode">' : '<img src="assets/moon_icon.svg" alt="dark mode">';
-	darkModeToggle.addEventListener('click', toggleDarkMode);
-	
 	setTimeout(function() {
 		document.getElementById('body').style.transition = 'all 1s ease';
 	}, 500);
 
 	const username = document.getElementById('username-rainbow');
-	username.addEventListener('click', () => {
-		username.classList.add('clicked');
-
-		setTimeout(() => {
-			username.classList.remove('clicked');
-		}, 3000);
-	})
+	if (username) {
+		username.addEventListener('click', () => {
+			username.classList.add('clicked');
+	
+			setTimeout(() => {
+				username.classList.remove('clicked');
+			}, 3000);
+		})
+	}
 });
 
 function toggleDarkMode() {
@@ -33,6 +36,6 @@ function toggleDarkMode() {
 
 function playClownHorn() {
 	var clownHorn = new Audio('assets/clown_horn.mp3');
-	clownHorn.playbackRate = Math.random() + 0.75;
+	clownHorn.playbackRate = 1;
 	clownHorn.play();
 }
