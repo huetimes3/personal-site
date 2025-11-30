@@ -96,7 +96,7 @@ p, span {
 #username-rainbow {
     color: var(--heading-color);
     transition: 1s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 #username-rainbow:hover, #username-rainbow.clicked {
