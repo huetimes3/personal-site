@@ -1,287 +1,338 @@
 :root {
-    /* Shamelessly taken from forestbones, thank you <3 */
-    /* https://github.com/zenbones-theme/zenbones.nvim */
-    /* --yellow : #DDBD7F; */
-    /* --yellow-light: #EDC77A; */
-    /* --beige: #B2A790; */
-    /* --beige-light: #E7DCC4; */
-    /* --green: #A9C181; */
-    /* --green-light: #B0CE7B; */
-    /* --teal: #83C193; */
-    /* --teal-light: #7DD093; */
-    /* --cyan: #7FBCB4; */
-    /* --cyan-light: #7AC9C0; */
-    /* --grey: #2C343A; */
-    /* --grey-light: #45525C; */
-    /* --pink: #D69AB7; */
-    /* --pink-light: #E5A7C4; */
-    /* --red: #E67C7F; */
-    /* --red-light: #ED9294; */
-    --background-1: #FAF3E1;
-    --red-1: #F85550;
-    --green-1: #8DA200;
-    --yellow-1: #DEA000;
-    --blue-1: #3A94C4;
-    --magenta-1: #DF69BA;
-    --cyan-1: #36A87E;
-    --foreground-1: #4F5B62;
-    --background-2: #DBC988;
-    --red-2: #E6271C;
-    --green-2: #758700;
-    --yellow-2: #B98500;
-    --blue-2: #297CA6;
-    --magenta-2: #CA43A3;
-    --cyan-2: #258C67;
-    --foreground-2: #6E7F88;
+  /* Shamelessly taken from forestbones, thank you <3 */
+  /* https://github.com/zenbones-theme/zenbones.nvim */
+  /* --yellow : #DDBD7F; */
+  /* --yellow-light: #EDC77A; */
+  /* --beige: #B2A790; */
+  /* --beige-light: #E7DCC4; */
+  /* --green: #A9C181; */
+  /* --green-light: #B0CE7B; */
+  /* --teal: #83C193; */
+  /* --teal-light: #7DD093; */
+  /* --cyan: #7FBCB4; */
+  /* --cyan-light: #7AC9C0; */
+  /* --grey: #2C343A; */
+  /* --grey-light: #45525C; */
+  /* --pink: #D69AB7; */
+  /* --pink-light: #E5A7C4; */
+  /* --red: #E67C7F; */
+  /* --red-light: #ED9294; */
+  --background-1: #faf3e1;
+  --red-1: #f85550;
+  --green-1: #8da200;
+  --yellow-1: #dea000;
+  --blue-1: #3a94c4;
+  --magenta-1: #df69ba;
+  --cyan-1: #36a87e;
+  --foreground-1: #4f5b62;
+  --background-2: #dbc988;
+  --red-2: #e6271c;
+  --green-2: #758700;
+  --yellow-2: #b98500;
+  --blue-2: #297ca6;
+  --magenta-2: #ca43a3;
+  --cyan-2: #258c67;
+  --foreground-2: #6e7f88;
 
-    /* COLORS ACTUALLY BEING USED (ATM tm) */
-    --primary-color: var(--red-2);
-    --secondary-color: var(--background-2);
-    --primary-font-color: var(--foreground-1);
-    --secondary-font-color: var(--blue-1);
-    --bg-color: var(--background-1);
-    --heading-color: var(--green-2);
+  /* COLORS ACTUALLY BEING USED (ATM tm) */
+  --primary-color: var(--red-2);
+  --secondary-color: var(--background-2);
+  --primary-font-color: var(--foreground-1);
+  --secondary-font-color: var(--blue-1);
+  --bg-color: var(--background-1);
+  --heading-color: var(--green-2);
+
+  --body-max-width: 60ch;
 }
 
 [data-theme="dark"] {
-    --background-1: #2C343A;
-    --red-1: #E67C7F;
-    --green-1: #A9C181;
-    --yellow-1: #DDBD7F;
-    --blue-1: #7FBCB4;
-    --magenta-1: #D69AB7;
-    --cyan-1: #83C193;
-    --foreground-1: #E7DCC4;
-    --background-2: #45525C;
-    --red-2: #ED9294;
-    --green-2: #B0CE7B;
-    --yellow-2: #EDC77A;
-    --blue-2: #7AC9C0;
-    --magenta-2: #E5A7C4;
-    --cyan-2: #7DD093;
-    --foreground-2: #B2A790;
+  --background-1: #2c343a;
+  --red-1: #e67c7f;
+  --green-1: #a9c181;
+  --yellow-1: #ddbd7f;
+  --blue-1: #7fbcb4;
+  --magenta-1: #d69ab7;
+  --cyan-1: #83c193;
+  --foreground-1: #e7dcc4;
+  --background-2: #45525c;
+  --red-2: #ed9294;
+  --green-2: #b0ce7b;
+  --yellow-2: #edc77a;
+  --blue-2: #7ac9c0;
+  --magenta-2: #e5a7c4;
+  --cyan-2: #7dd093;
+  --foreground-2: #b2a790;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-color);
-    font-family: "Chakra Petch", sans-serif;
+html {
+  background-color: var(--bg-color);
+  font-family: "Chakra Petch", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  min-height: 100vh;
+  height: 100%;
+  max-width: var(--body-max-width);
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  /* maybe move to container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+
+  h1 {
+    padding-top: 2rem;
+  }
+}
+
+nav.top-nav {
+  width: 100%;
+  border-bottom: 2px solid var(--background-2);
+
+  h1 {
+    margin: 0;
+    a {
+      text-decoration: none;
+      color: var(--foreground-1);
+    }
+  }
 }
 
 a {
-    color: var(--primary-color);
-    text-decoration: underline dotted;
+  color: var(--primary-color);
+  text-decoration: underline dotted;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--secondary-font-color);
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary-font-color);
+  margin: 0;
 }
 
 h1 {
-    color: var(--heading-color);
-    margin-bottom: 0.5rem;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
 }
 
-p, span {
-    color: var(--primary-font-color);
+p,
+span {
+  color: var(--primary-font-color);
 }
 
 #content {
-    width: 650px;
-    position: relative;
+  width: 650px;
+  position: relative;
 }
 
 #container {
-    border: 3px solid var(--secondary-color);
-    background-color: var(--bg-color);
-    position: relative;
-    width: 100%;
-    height: 415px;
-    padding: 20px;
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--bg-color);
+  position: relative;
+  width: 100%;
+  height: 415px;
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
 }
 
 .col {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 #left {
-    align-items: start;
-    flex: 1.2;
+  align-items: start;
+  flex: 1.2;
 }
 
 #self-portrait {
-    width: 70%;
-    border-radius: 50%;
-    margin: 1rem 0;
+  width: 70%;
+  border-radius: 50%;
+  margin: 1rem 0;
 }
 
 #blurb {
-    text-align: justify;
+  text-align: justify;
 }
 
 #username-rainbow {
-    color: var(--heading-color);
-    transition: 1s ease;
-    /* cursor: pointer; */
+  color: var(--heading-color);
+  transition: 1s ease;
+  /* cursor: pointer; */
 }
 
-#username-rainbow:hover, #username-rainbow.clicked {
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow 2s linear infinite;
-    background-size: 400% 100%;
+#username-rainbow:hover,
+#username-rainbow.clicked {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red,
+    orange,
+    yellow
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 2s linear infinite;
+  background-size: 400% 100%;
 }
 
 @keyframes rainbow {
-    0%{
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 #links {
-    color: var(--primary-font-color);
-    
+  color: var(--primary-font-color);
 }
 
 #right {
-    align-items: end;
-    padding-right: 1.5rem;
+  align-items: end;
+  padding-right: 1.5rem;
 }
 
 #right a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    list-style-type: "<<  ";
-    direction: rtl;
-    color: var(--primary-font-color);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: "<<  ";
+  direction: rtl;
+  color: var(--primary-font-color);
 }
 
 ul li {
-    margin: 0.5rem 0;
-
+  margin: 0.5rem 0;
 }
 
 ul li a {
-    color: var(--primary-font-color);
+  color: var(--primary-font-color);
 }
 
 ul li a:hover {
-    color: var(--primary-color);
-    font-weight: bold;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 #pop-out {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 415px;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 415px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #footer span {
-    align-self: center;
+  align-self: center;
 }
 
 #footer button {
-    background: none;
-    border: none;
-    color: var(--heading-color);
-    padding: 0;
-    cursor: pointer;
-    font-size: 1rem;
+  background: none;
+  border: none;
+  color: var(--heading-color);
+  padding: 0;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 #footer button img {
-    height: 2rem;
+  height: 2rem;
 }
 
 /* mobile support :p */
 @media (max-width: 768px) {
-    body {
-        justify-content: start;
-        padding: 3rem 0;
-        height: fit-content
-    }
+  body {
+    justify-content: start;
+    padding: 3rem 0;
+    height: fit-content;
+  }
 
-    #content {
-        width: 90%;
-    }
+  #content {
+    width: 90%;
+  }
 
-    #container {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        gap: 2rem;
-    }
+  #container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+  }
 
-    #left, #right {
-        align-items: center;
-    }
+  #left,
+  #right {
+    align-items: center;
+  }
 
-    #username-rainbow:click {
+  #username-rainbow:click {
+  }
 
-        
-    }
+  h3,
+  ul {
+    text-align: center;
+  }
 
-    h3, ul {
-        text-align: center;
-    }
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
 
-    ul {
-        padding: 0;
-        list-style-type: none;
-    }
+  .col {
+    max-width: 100%;
+  }
 
-    .col {
-        max-width: 100%;
-    }
+  #self-portrait {
+    width: 50%;
+  }
 
-    #self-portrait {
-        width: 50%;
-    }
-
-    #footer {
-        width: 100%;
-    }
+  #footer {
+    width: 100%;
+  }
 }
