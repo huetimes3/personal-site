@@ -279,10 +279,6 @@ ul li a:hover {
   display: flex;
   justify-content: space-between;
 
-  .next a,
-  .prev a {
-    text-decoration: none;
-  }
   .next a::after {
     content: " >";
   }
