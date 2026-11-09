@@ -1,32 +1,115 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>WireWare</title>
-	<meta name="description" content="Game from Tudor's portfolio site">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WireWare</title>
+    <meta
+      name="description"
+      content="Game about making wires and messing with computers"
+    />
 
-	<meta property="og:title" content="huetimes3">
-	<meta property="og:type" content="website">
-	<meta property="og:description" content="Super cool portofolio site">
-	<meta property="og:image" content="icon.jpg">
+    <meta property="og:title" content="WireWare" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Game about making wires and messing with computers"
+    />
+    <meta property="og:image" content="/assets/icon.jpg" />
 
-	<style>
-		html {
-			transition: none;
-			color-scheme: light dark;
-		}
-	</style>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
-	<link href="../../styles.css" rel="stylesheet">
-	<script src="../../script.js" defer></script>
-	<link rel="icon" href="assets/favicon.gif" type="image/png">
-</head>
+    <style>
+      html {
+        transition: none;
+        color-scheme: light dark;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js" defer></script>
+    <link rel="icon" href="/assets/favicon.gif" type="image/png" />
+  </head>
 
-<body>
-	WireWare!?
-	<iframe frameborder="0" src="https://itch.io/embed-upload/2475242?color=333333" allowfullscreen="" width="1300" height="808"><a href="https://vortexb.itch.io/wireware">Play WireWare on itch.io</a></iframe>
-</body>
+  <body>
+    <nav class="top-nav">
+      <h1><a href="/">huecities</a></h1>
+    </nav>
+    <main>
+      <h1>WireWare</h1>
+      <div class="byline">GMTK Jam 2020</div>
+      <article>
+        <p>
+          The first game I got to help design, and one of my favorites in terms
+          of how the puzzles turned out. I had a friend work on the programming
+          while I did the art, writing and bulk of the levels. I was so
+          unfamiliar with unity at the time that I drew most of the levels on
+          paper before trying to port them into the game.
+        </p>
+        <p>
+          The theme was "out of control", and we pretty quickly decided on
+          making a puzzle game that relies on the common keyboard shortcuts of
+          ctrl+v, ctrl+x and ctrl+c. The idea was to have levels that required
+          moving keys around to press buttons that open up gates. By opening up
+          the gates, you create a path to the goal.
+        </p>
+        <p>
+          Given the game's cyber theme, the gates themselves are "kinda sorta
+          logic" gates. In practice, they can be hooked up to multiple buttons,
+          with either an "any" or "all" rule (i.e. "any" of the buttons need to
+          be pressed, or "all" the buttons need to be pressed). On top of that,
+          there's also an optional "not" flag that can reverse the state of the
+          gate. We give the players a few levels to experiment with this
+          baseline ruleset.
+        </p>
+        <p>
+          After a few "normal" levels, the player is given ctrl+v with a keycard
+          in their clipboard, and the challenge comes from thinking about where
+          to place the card to make the level completable. Then, they're
+          introduced to ctrl+x, and finally to ctrl+c. The decision behind this
+          order of unlocks was clear, we wanted the players' to feel like each
+          new move built upon the previous. Each unlock was also to some extent
+          a stronger version of the previous (although some levels exploit the
+          removing aspect of ctrl+x), and so the progression felt relatively
+          natural.
+        </p>
+        <p>
+          I had loads of fun writing the malware's dialogue, and for a first
+          attempt at serious pixelart I was pretty happy with the end result.
+          The level progression was a bit all over the place. We had some
+          friends playtest them and shifted the levels around based on their
+          difficulty with each one. Still, after each unlock there's a few
+          rather easy levels to get used to the introduced mechanics which is
+          what led to the large apparent level count for a 48hr jam.
+        </p>
+        <p>
+          After playing it again a few years later, I'm pleasantly surprised by
+          what we were able to pull off. It's scrappy and missing a lot of the
+          polish we wish we could have had the time to implement, but some of
+          the levels actually had me stumped!
+        </p>
+        <p>You can try the game out on our itch page below!</p>
+        <iframe
+          class="game-widget"
+          frameborder="0"
+          src="https://itch.io/embed/697875?linkback=true&amp;border_width=0&amp;bg_color=eab3d1&amp;fg_color=222222&amp;link_color=5b70fa&amp;border_color=d95763"
+          width="550"
+          height="165"
+          ><a href="https://vortexb.itch.io/wireware"
+            >WireWare by VortexB, hue</a
+          ></iframe
+        >
+      </article>
+      <nav class="next-prev">
+        <div class="prev">
+          <a href="../shove-knight/">Shove Knight</a>
+        </div>
+        <div class="next"></div>
+      </nav>
+    </main>
+  </body>
+</html>

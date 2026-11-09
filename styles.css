@@ -42,6 +42,7 @@
   --bg-color: var(--background-1);
   --heading-color: var(--green-2);
 
+  --body-padding: 8px;
   --body-max-width: 60ch;
 }
 
@@ -81,7 +82,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 8px;
+  padding: var(--body-padding);
   min-height: 100vh;
   height: 100%;
   max-width: var(--body-max-width);
@@ -90,7 +91,6 @@ body {
 
   /* maybe move to container */
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -144,6 +144,10 @@ span {
 #content {
   width: 650px;
   position: relative;
+  height: calc(100vh - 2 * var(--body-padding));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #container {
@@ -261,6 +265,31 @@ ul li a:hover {
   z-index: 0;
   justify-content: center;
   align-items: center;
+}
+
+.game-widget {
+  width: 100%;
+}
+
+.next-prev {
+  border-top: 2px solid var(--background-2);
+  width: 100%;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  .next a,
+  .prev a {
+    text-decoration: none;
+  }
+  .next a::after {
+    content: " >";
+  }
+
+  .prev a::before {
+    content: "< ";
+  }
 }
 
 #footer {
