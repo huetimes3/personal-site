@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>huecities</title>
+  <link>https://huecities.com</link>
+  <description>updates . games . clownery</description>
+
+  <item>
+    <title>Feeling Autumnal</title>
+    <link>huecities.com/now/</link>
+    <pubDate>Tue, 10 Nov 2026 12:00:00 -0000</pubDate>
+	<description>
+      "Un deuxième printemps, où toutes les feuilles sont comme des fleurs."
+    </description>
+    <guid>huecities.com/now/10112026</guid>
+  </item>
+</channel>
+</rss>
