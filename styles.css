@@ -317,12 +317,11 @@ ul.home-ul {
 @media (max-width: 768px) {
   body {
     justify-content: start;
-    padding: 3rem 0;
     height: fit-content;
   }
 
   #content {
-    width: 90%;
+    width: 95%;
   }
 
   #container {
