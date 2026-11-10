@@ -234,25 +234,26 @@ span {
 }
 
 ul {
+  color: var(--primary-font-color);
+  margin-left: 0;
+}
+
+ul.home-ul {
   margin: 0;
   padding: 0;
   width: 100%;
   list-style-type: "<<  ";
   direction: rtl;
-  color: var(--primary-font-color);
-}
-
-ul li {
-  margin: 0.5rem 0;
-}
-
-ul li a {
-  color: var(--primary-font-color);
-}
-
-ul li a:hover {
-  color: var(--primary-color);
-  font-weight: bold;
+  li {
+    margin: 0.5rem 0;
+    a {
+      color: var(--primary-font-color);
+      &:hover {
+        color: var(--primary-color);
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 #pop-out {
@@ -340,11 +341,11 @@ ul li a:hover {
   }
 
   h3,
-  ul {
+  ul.home-ul {
     text-align: center;
   }
 
-  ul {
+  ul.home-ul {
     padding: 0;
     list-style-type: none;
   }
