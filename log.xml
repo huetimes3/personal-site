@@ -51,20 +51,20 @@
         <ul>
           <li>Added dedicated pages for each game I've worked on.</li>
           <li>
-            Wrote postmortems for <a href="./games/wireware/">WireWare</a> and
-            <a href="./games/marauders-of-madness/">Marauders of Madness</a>
+            Wrote postmortems for <a href="https://huecities.com/games/wireware/">WireWare</a> and
+            <a href="https://huecities.com/games/marauders-of-madness/">Marauders of Madness</a>
           </li>
           <li>
-            Created an <a href="./assets/8831btn-hue.png">88x31 button</a> for
+            Created an <a href="https://huecities.com/assets/8831btn-hue.png">88x31 button</a> for
             the site.
           </li>
           <li>
-            Initialized an <a href="./log.xml">rss feed</a> for future updates.
+            Initialized an <a href="https://huecities.com/log.xml">rss feed</a> for future updates.
           </li>
         </ul>
 
         <img
-          src="./assets/inktober-2026-01.png"
+          src="https://huecities.com/assets/inktober-2026-01.png"
           alt="sketch of an Ohm from Nausicaä I made for day 1 of inktober"
           height="260"
         />
