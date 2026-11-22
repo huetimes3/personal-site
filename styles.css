@@ -78,6 +78,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: none;
+  color-scheme: light dark;
 }
 
 body {
@@ -114,12 +116,39 @@ main {
 nav.top-nav {
   width: 100%;
   border-bottom: 2px solid var(--background-2);
+  display: flex;
+  gap: 2rem;
 
   h1 {
-    margin: 0;
+    /* margin: auto 0 0.5rem; */
     a {
       text-decoration: none;
       color: var(--foreground-1);
+    }
+  }
+
+  .site-map {
+    margin-bottom: 0.5rem;
+    ul {
+      padding: 0;
+      margin: 0 2rem 0 0;
+      display: inline-block;
+      list-style: none;
+      vertical-align: top;
+
+      li {
+        a {
+          color: var(--foreground-1);
+        }
+
+        &.here {
+          font-weight: 800;
+        }
+
+        &:not(.here, :hover) a {
+          text-decoration: none;
+        }
+      }
     }
   }
 }
