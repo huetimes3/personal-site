@@ -37,45 +37,55 @@
       <div class="byline">McGame Jame 2021</div>
       <article>
         <p>
-          We wanted to make an action-puzzle game where the player creates a
-          path behind them that would both lead towards their objective and act
-          as the primary obstacle to achieving said objective. One of the first
-          ideas was to have a firefighter that would leave a trail of fire
-          behind them that would spread out of control.
+          My buddy and I wanted to make a puzzle game, where the player creates
+          a trail behind them that acts both as an obstacle (like in snake
+          games) and as the primary method for clearing a level.
         </p>
         <p>
-          After a bit of refining we dropped the 'action' bit and focused on a
-          grid based enemy shoving puzzler. The floor falls behind the charcter
-          as they navigate a grid and they need to shove the enemies into the
-          newly create pits, before returning back to where they started.
+          Our initial brainstorming led to a grid based enemy shoving puzzler.
+          The floor falls behind the charcter as they navigate a grid and they
+          need to shove the enemies into the newly create pits, before returning
+          back to where they started.
         </p>
         <p>
-          We didn't know this at the time but we had stumbled into making a
-          <a href="https://en.wikipedia.org/wiki/Sokoban">Sokoban</a>. In
-          retrospect, I'm almost certain we had both played some Sokoban-esque
-          game before coming together for this project. A lot of the design
-          decisions converged to staples of the genre (the quick restart and
-          undo come to mind).
+          We didn't know this at the time but we had unwittingly made a
+          <a href="https://en.wikipedia.org/wiki/Sokoban">Sokoban-type game</a>.
+          Looking back now, I'm almost certain we had both played some similar
+          games before coming together for this project. A lot of our design
+          decisions converged to staples of this subgenre (such as having an
+          easy way to undo a move or restart a level).
         </p>
         <p>
           We intentionally kept the scope for this game as small as possible. My
-          friend already had boilerplate for grid based games and we wanted to
-          stick to a monochrome color palette. After the first 24 hours we had
-          pretty much all we needed to get started on churning out levels.
+          friend already had some boilerplate for grid based games on hand and
+          we wanted to stick to a monochrome color palette, and as a result
+          making the pixel art wasn't as challenging. After the first 24 hours
+          we had pretty much all we needed to get started on churning out
+          levels.
         </p>
         <p>
-          There's some clever levels in there, but also a couple that feel a bit
-          underbaked. Playing more block-pushers after the matter also opened up
-          my eyes to the possibilities (add a footer with a link to hempuli's
-          work!
-          <a href="https://itch.io/c/4014684/tiny-block-pushers">here!</a>). I'd
-          also probably seriously tighten the interpolation time of everything
-          in the game, it kind of gives everything a "mushy" feel right now,
-          idk.
+          My process was to work backwards from a predrawn path on a grid, and
+          to add enemies and keys along the way. Then, I would revisit the path
+          and tweak some turns and obstacles here and there and iterate until I
+          was happy with the result.
+        </p>
+        <p>
+          (note to self, come back and show process behind some of the levels)
+        </p>
+        <p>
+          There's some clever levels in there, but I would say a majority of
+          them don't really give players a sense of breakthrough. As I played
+          more block-pushers after this jam, I started to develop my instinct
+          for puzzle design (<a
+            href="https://itch.io/c/4014684/tiny-block-pushers"
+            >hempuli's suite of mini games is great for this!</a
+          >). When it comes to polish, I'd also probably seriously tighten the
+          interpolation time of everything in the game in a future update; at
+          the moment everything just feels mushy.
         </p>
         <p>
           If I haven't somehow convinced you to try a whole library of better
-          sokoban already, you can check out Shove Knight below!
+          sokoban-type games already, you can check out Shove Knight below!
         </p>
         <iframe
           class="game-widget"
