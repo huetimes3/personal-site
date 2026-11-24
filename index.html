@@ -26,102 +26,94 @@
     <link rel="icon" href="assets/favicon.gif" type="image/png" />
   </head>
 
-  <!-- TODO: remove make the centered rules and whatnot unique to this page -->
   <body id="body">
-    <div id="content">
-      <div id="container">
-        <div id="left" class="col">
-          <h1>Tudor T.M.</h1>
-          <img
-            src="assets/self-portrait.svg"
-            alt="self-portrait"
-            id="self-portrait"
-            onclick="playClownHorn()"
-          />
-          <p id="blurb">
-            also known as <span id="username-rainbow">hue</span>. I'm a
-            programmer and game designer based in Tiohtià:ke (Montreal).
-            Currently doing full-stack and carving a place for myself on the
-            web. Engaged in business, of the funny variety :)
-          </p>
-          <div id="links">
-            <a href="./log.xml"> rss </a>
-            &nbsp;•&nbsp;
-            <a
-              href="https://github.com/huetimes3"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github
-            </a>
-            &nbsp;•&nbsp;
-            <a
-              href="https://huetimes3.itch.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              itch.io
-            </a>
-            <!-- &nbsp;•&nbsp; -->
-            <!-- <a -->
-            <!--   href="https://bsky.app/profile/huecities.bsky.social" -->
-            <!--   target="_blank" -->
-            <!--   rel="noopener noreferrer" -->
-            <!-- > -->
-            <!--   bluesky -->
-            <!-- </a> -->
-            &nbsp;•&nbsp;
-            <a
-              href="mailto:huecities@proton.me"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              email
-            </a>
-          </div>
-        </div>
-
-        <div id="right" class="col">
-          <h1>My stuff</h1>
-          <h3>Games</h3>
-          <ul class="home-ul" id="games">
-            <!-- <li><a href="https://lampkatze.com/">SLEEP HERD</a></li> -->
-            <li><a href="./games/slate/">SLATE</a></li>
-            <li>
-              <a href="./games/lost-the-plot/">Lost the Plot</a>
-            </li>
-            <li>
-              <a href="./games/tower-of-rubble/">Tower of Rubble</a>
-            </li>
-            <li>
-              <a href="./games/marauders-of-madness/">Marauders of Madness</a>
-            </li>
-            <li>
-              <a href="./games/shove-knight/">Shove Knight</a>
-            </li>
-            <li><a href="./games/wireware/">WireWare</a></li>
-          </ul>
-          <h3>Other</h3>
-          <ul class="home-ul" id="others">
-            <li><a href="./now/">Now</a></li>
-            <li><a href="./blog/">Writings</a></li>
-            <!-- <li><a href="https://github.com/huetimes3/AoC2022">Advent of Code 2025 (C#)</a></li> -->
-            <li>...and some other stuff</li>
-          </ul>
+    <nav class="top-nav home-nav">
+      <h1><a href="/">huecities</a></h1>
+      <div class="site-map">
+        <ul>
+          <li><a href="/games">games</a></li>
+          <li><a href="/journal">journal</a></li>
+          <li><a href="/about">about</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="container">
+      <div id="left" class="col">
+        <img
+          src="assets/self-portrait.svg"
+          alt="self-portrait"
+          id="self-portrait"
+          onclick="playClownHorn()"
+        />
+        <p id="blurb">
+          known online as <span id="username-rainbow">hue</span>. I'm a
+          programmer and game designer based in Tiohtià:ke (Montreal). Currently
+          doing full-stack and carving a place for myself on the web. Engaged in
+          business, of the funny kind :)
+        </p>
+        <div id="links">
+          <a href="./log.xml"> rss </a>
+          &nbsp;•&nbsp;
+          <a
+            href="https://github.com/huetimes3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+          &nbsp;•&nbsp;
+          <a
+            href="https://huetimes3.itch.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            itch.io
+          </a>
+          <!-- &nbsp;•&nbsp; -->
+          <!-- <a -->
+          <!--   href="https://bsky.app/profile/huecities.bsky.social" -->
+          <!--   target="_blank" -->
+          <!--   rel="noopener noreferrer" -->
+          <!-- > -->
+          <!--   bluesky -->
+          <!-- </a> -->
+          &nbsp;•&nbsp;
+          <a
+            href="mailto:huecities@proton.me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            email
+          </a>
         </div>
       </div>
 
-      <div id="footer">
-        <span>huecities.com</span>
-        <a href="/">
-          <img
-            src="assets/8831btn-hue.png"
-            alt="88-31 button"
-            id="self-button"
-          />
-        </a>
-        <!-- <button id="dark-mode-toggle"></button> -->
+      <div id="right" class="col">
+        <h2>Quick Links</h2>
+        <h3>Games</h3>
+        <ul class="home-ul" id="games">
+          <li>
+            <a href="/games/tower-of-rubble/">Tower of Rubble</a>
+          </li>
+          <li>
+            <a href="/games/shove-knight/">Shove Knight</a>
+          </li>
+          <li><a href="/games/wireware/">WireWare</a></li>
+        </ul>
+        <h3>Other</h3>
+        <ul class="home-ul" id="others">
+          <li><a href="/journal/log/2026/">Updates</a></li>
+          <li><a href="/journal/etudes/sdf/">Shader Study</a></li>
+        </ul>
       </div>
+    </div>
+
+    <div id="footer">
+      <span>silly with it</span>
+      <a href="/">
+        <img src="assets/8831btn-hue.png" alt="88-31 button" id="self-button" />
+      </a>
+      <!-- <button id="dark-mode-toggle"></button> -->
     </div>
   </body>
 </html>

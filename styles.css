@@ -151,6 +151,10 @@ nav.top-nav {
       }
     }
   }
+
+  &.home-nav {
+    border-bottom: none;
+  }
 }
 
 a {
@@ -179,7 +183,7 @@ span {
 }
 
 #content {
-  width: 650px;
+  /* width: 650px; */
   position: relative;
   height: calc(100vh - 2 * var(--body-padding));
   display: flex;
@@ -192,7 +196,6 @@ span {
   background-color: var(--bg-color);
   position: relative;
   width: 100%;
-  height: 415px;
   padding: 20px;
   z-index: 1;
   display: flex;
@@ -207,7 +210,7 @@ span {
 
 #left {
   align-items: start;
-  flex: 1.2;
+  flex: 1.5;
 }
 
 #self-portrait {
@@ -327,6 +330,7 @@ ul.home-ul {
 }
 
 #footer {
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
